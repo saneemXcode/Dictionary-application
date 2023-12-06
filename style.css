@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background-color: rgb(51, 181, 160);
+}
+
+.search-from{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 10vh;
+    margin-bottom: 2rem;
+    background-color: rgb(49, 147, 193);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+    border-radius: 10px;
+    
+    
+}
+.search-from input,button{
+  flex-basis:70%;
+  font-size: 1rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  background-color: transparent;  
+  /* background-color: transparent;  when background color given transparent it will  take background color as parent color  */
+  color: rgb(0, 0, 0);
+ 
+}
+.search-from button{
+ flex-basis: 30%;
+ cursor: pointer;
+ border-left: 1px solid #545454;
+ width: 10px;
+ padding-left: 20px;
+
+}
+.search-from button:hover{
+       transform: scaleX(2px);
+    color: rgb(249, 254, 255);
+   
+}
+.card{
+    width: 400px;
+    background-color: rgb(49, 147, 193);
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(20, 150, 159, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.property{
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: flex-start;
+    margin: 1rem 0;
+    column-gap: 1rem;
+    font-size: 20px;
+}
+.property audio{
+    height: 50px;
+}
+@media only screen and (max-width: 600px) {
+    .search-from{
+        width: 300px;
+        margin-left: 10px;
+
+    }
+    .card{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .property audio{
+        width: 245px;
+        margin-left: -10px;
+        height: 40px;
+    }
+}
