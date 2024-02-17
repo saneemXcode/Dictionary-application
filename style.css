@@ -11,6 +11,7 @@ body {
     place-items: center;
     min-height: 100vh;
     background-color: #091921;
+    overflow:hidden;
 }
 
 body .bubble {
@@ -121,15 +122,13 @@ button {
 
 @media only screen and (max-width: 600px) {
     .search-from {
-        width: 320px;
-        margin-left: 10px;
-
-
+        width: 300px;
+        margin-left: 8px;
     }
 
     .card {
-        width: 320px;
-        margin-left: 10px;
+        width: 300px;
+        margin-left: 8px;
     }
 
     .property audio {
