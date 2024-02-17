@@ -91,3 +91,21 @@ function checkInputValue() {
         dictionary.innerHTML = ''; // Clear the content if input is empty
     }
 }
+function createBubble() {
+    const section = document.querySelector('body');
+    const createElement = document.createElement('span');
+    var sze = Math.random() * 40;
+    createElement.style.width = 20 + sze + 'px';
+    createElement.style.height = 20 + sze + 'px';
+    createElement.style.left = Math.random() * (window.innerWidth - 40) + "px";
+    
+    createElement.classList.add('bubble');
+
+    section.appendChild(createElement);
+
+    setTimeout(() => {
+        createElement.remove();
+    }, 4000);
+}
+
+setInterval(createBubble, 50);
