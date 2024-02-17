@@ -70,12 +70,13 @@ body{
 }
 @media only screen and (max-width: 600px) {
     .search-from{
-        width: 300px;
+        width: 340px;
         margin-left: 10px;
+        
 
     }
     .card{
-        width: 300px;
+        width: 340px;
         margin-left: 10px;
     }
     .property audio{
